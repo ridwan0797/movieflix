@@ -126,8 +126,8 @@ export default {
 }
 
 .scroll-container {
-  height: 300px; /* Set the desired height for the scrollable container */
-  overflow-y: scroll; /* Ena
+  height: 280px; /* Set the desired height for the scrollable container */
+  overflow-y: hidden; /* Ena
 }
 
 .scroll-content {

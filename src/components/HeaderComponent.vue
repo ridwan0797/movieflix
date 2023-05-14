@@ -5,7 +5,7 @@
       <i class="fas fa-search"></i>
     </button>
 
-    <div class="text-lg cursor-pointer" @click="handleSearch">Search</div>
+    <div class="text-lg cursor-pointer mr-7" @click="handleSearch">Search</div>
   </header>
 </template>
 
@@ -16,7 +16,7 @@ export default {
   name: 'HeaderComponent',
   emits: ['search'],
   setup(props, vm) {
-    const title = 'MNC MOVIES'
+    const title = 'MOVIEFLIX'
     const showSearch = ref(false)
 
     const toggleSearch = () => {

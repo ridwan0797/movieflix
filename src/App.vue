@@ -7,9 +7,10 @@ import HeaderComponent from './components/HeaderComponent.vue'
 
 <template>
   <header-component v-if="$route.meta.headers" @search="() => ($refs.dialog.showDialog = true)" />
+
   <DialogSearch ref="dialog" />
 
-  <RouterView class="mt-5" />
+  <RouterView />
 </template>
 
 <script>

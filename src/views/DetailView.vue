@@ -3,13 +3,13 @@
     class="w-screen h-screen top-0 left-0 bg-center bg-no-repeat bg-cover"
     :style="`background-image: url('https://image.tmdb.org/t/p/w1280${record.backdrop_path}');`"
   >
-    <div class="w-screen h-screen absolute"></div>
+    <div class="w-screen h-screen absolute bg-black opacity-50"></div>
     <!-- Background Image -->
 
-    <div class="w-full h-full absolute top-0 left-0 bg-black opacity-50"></div>
+    <div class="w-full h-full absolute top-0 left-0"></div>
     <!-- Overlay -->
 
-    <div class="h-full flex flex-col justify-end z-40 relative">
+    <div class="absolute bottom-0 w-full" v-if="record">
       <div class="mx-auto py-8 mb-32">
         <div class="flex flex-col md:flex-row p-5 md:p-2 lg:p-4">
           <div class="md:w-2/3 mt-4 md:mt-0 md:ml-8">
